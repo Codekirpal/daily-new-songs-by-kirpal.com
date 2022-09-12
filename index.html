@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Daily new songs by kirpal</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Sound%20webpage_img/this%20logo.png" class="logo">
+            <ul>
+                <li><a href="#"><br><b>TODAY'S NEW SONG IS IMAGIN DRAGON</b></br></a></li>
+            </ul>
+    </div>
+    <div class="content">
+        <div class="left-col">
+            <h1><br>DAILY SONGS<br></h1>
+        </div>
+        <div class="right-col">
+            <p>Click Here To Listen</p>
+            <img src="Sound%20webpage_img/play.png" id="icon">
+        </div>
+        </div>
+        <audio id="BlackPink">
+            <source src = "Sound%20webpage_img/imagindragon.mp3"type="audio/mp3">
+        </audio>
+<script>
+    
+    var BlackPink = document.getElementById("BlackPink");
+    var icon = document.getElementById("icon");
+    
+    icon.onclick = function(){
+        if(BlackPink.paused){
+            BlackPink.play();
+            icon.src = "Sound%20webpage_img/pause.png";
+        }else{
+            BlackPink.pause();
+            icon.src = "Sound%20webpage_img/play.png";
+        }
+    }
+        
+</script>
+    </div>
+</body>
+</html>
